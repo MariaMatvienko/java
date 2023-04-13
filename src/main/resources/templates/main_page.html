@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olx Lab Matvienko</title>
+    <style>
+    	h1 {
+        	text-align: center;
+        }
+        html, body {
+        	color: #ebebe7;
+        	background: #3e929e;
+            height:100%;
+            width:100%;
+            margin:0;
+        }
+        body {
+        	display:flex;
+        }
+        form {
+        	margin:auto;
+        }
+    </style>
+</head>
+<body>
+<form action="#" th:action="@{/parsing}" th:object="${parsingModel}" method="post">
+    <h1>Parse Olx page / Matvienko Maria</h1>
+    <p>Введіть слово по якому шукати парсити: <input type="text" th:field="*{data}" /></p>
+    <button type="submit">Розпарсити сторінки</button>
+</form>
+</body>
+</html>
